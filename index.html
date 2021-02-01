@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediback</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        header {
+            height: 130px;
+        }
+
+        main {
+            background: #f2f4f7;
+        }
+
+        footer {
+            background: darkgray;
+            height: 310px;
+        }
+
+        .container {
+            display: flex;
+            grid-template-columns: 200px 500px 200px;
+            grid-template-rows: 200px 500px 200px;
+            justify-content: space-between;
+            margin: 0 30px 0 30px;
+        }
+
+        .item {
+            border: 5px solid black;
+            height: 100px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            /* 진행 방향(main axis)의 정렬 */
+            align-items: center;
+            /* 진행 방향의 반대(세로)(cross axis) 정렬 */
+        }
+
+        
+
+        .item1 {
+            border: 5px solid black;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container1 {
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="item">
+                <img src="image\images\logo_mediback.png" alt="mediback logo" />
+            </div>
+            <div class="item">
+                <input value="검색어를 입력하세요 " class="bar">
+                <img src="image\images\icon_search.png">
+            </div>
+            <div class="item">
+                <div class="links">
+                    <a href="#home" class="link_text">로그인</a>
+                    <a href="#home" class="link_text">회원가입</a>
+                    <a href="#home" class="link_text">1:1 문의</a>
+                </div>
+                <ul>
+                    <li><a class="active" href="#home">Mediback이란</a></li>
+                    <li><a href="#news">의료데이터</a></li>
+                    <li><a href="#contact">고객센터</a></li>
+                    <li><a href="#about">마이페이지</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <hr />
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="item1">
+                <img src="image\images\ai_banner.png" width="720" height="430" vspace="107" hspace="120" alt="main img"
+                    style="box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);" />
+            </div>
+            <div class="item1">
+                <div>
+                    <img src="image\images\icon_counter1.png" height="100">
+
+                    <h1><sup>총 수집 데이터</sup>621,554,000</h1>
+                </div>
+                <div>
+                    <img src="image\images\icon_counter2.png" height="100">
+                    <h1><sup>총 수집 데이터</sup>621,554,000</h1>
+                </div>
+                <div>
+                    <img src="image\images\icon_counter3.png" height="100">
+                    <h1><sup>총 수집 데이터</sup>621,554,000</h1>
+                </div>
+            </div>
+            <div class="item1">
+                데이터
+            </div>
+
+        </div>
+
+    </main>
+    <footer>하단</footer>
+
+</body>
+
+</html>

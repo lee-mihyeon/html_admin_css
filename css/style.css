@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.bar{
+    background-color: var(--search-box-bg, rgb(241, 238, 238));
+    border: 0.01;
+    border-radius: calc(0.5 * var(--ntp-realbox-height));
+    color: var(--search-box-text);
+    font-size: 16px;
+    outline: none;
+    padding-inline-end: 40px;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 500px;
+    --ntp-realbox-height: 44px;
+    border-radius: calc(0.5 * var(--ntp-realbox-height));
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    height: var(--ntp-realbox-height);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+.links { /* 링크들을 상단 우측에 위치시킵니다. */
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    margin-top: -80px;
+  }
+  .link_text {
+    font-size: 12px;
+    margin-left: 5px;
+  }
